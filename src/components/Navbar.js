@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg fixed-top custom-nav sticky">
+        <nav style={{ background:'#000000b2'}} className="navbar navbar-expand-lg custom-nav sticky">
             <div className="container">
                 <h1 ><Link to="/"style={{ color: '#ffffff' }}>ZGAMER</Link></h1>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -12,7 +12,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item active">
-                            <Link to="/" className="nav-link" style={{ color: '#fff' }}>Home</Link>
+                            <Link to="/" className="nav-link " style={{ color: '#fff' ,  textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Home</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/categories" className="nav-link" style={{ color: '#fff' }}>Categories</Link>
@@ -26,6 +26,9 @@ const Navbar = () => {
                         </li>
                         <li className="nav-item">
                             <Link to="/contact" className="nav-link" style={{ color: '#fff' }}>Contact</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/ShopPage" className="nav-link" style={{ color: '#fff' }}>ShopPage</Link>
                         </li>
                     </ul>
                 </div>
